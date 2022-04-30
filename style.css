@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#CGPA_app{
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+}
+
+#CGPA_app .input_section input{
+    width: 90%;
+    display: block;
+}
+
+
+#CGPA_app .popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    height: 350px;
+    border-radius: 8px;
+    position: absolute;
+    top: 17%;
+    left: 19%;
+    opacity: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+
+}
+
+#CGPA_app .popup > p{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#CGPA_app .popup #result{
+    font-size: 60px;
+}
